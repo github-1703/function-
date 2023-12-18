@@ -6,7 +6,8 @@ int factorial(int x)//function is called
     {
         ans = ans * i;
     }
-    return ans; //the name can be anything at last it will return ans to the respective function called
+    return ans; 
+//the name can be anything at last it will return ans to the respective function called
 
 }
 int main()
