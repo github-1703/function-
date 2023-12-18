@@ -1,0 +1,24 @@
+#include <stdio.h> //program that calculate ncr for you
+int factorial(int x)//function is called
+{
+    int ans = 1;
+    for (int i = 1; i <= x; i++)
+    {
+        ans = ans * i;
+    }
+    return ans; //the name can be anything at last it will return ans to the respective function called
+
+}
+int main()
+{
+    int n, r;
+    printf("enter n and r\n");
+    scanf("%d%d", &n, &r);
+
+    int nfact = factorial(n);
+    int rfact = factorial(r);
+    int nrfact = factorial(n - r);
+    int ncr = nfact / (rfact * nrfact);
+    printf("the nCr is %d", ncr);
+    return 0;
+}
